@@ -1,9 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
+h1, h2, h3, p, ul{
+    margin: 0;
+}
 
+ul{
+    padding: 0;
+}
+
+
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header-container{
+    display: flex;
+}
+
+.nav-header{
+    display: flex;
+}
 
 
 .header-logo{
@@ -15,13 +44,20 @@ body{
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 24px 0;
+    padding-left: 156px;
+    margin-right: 76px;
 }
 
 .half-logo{
     color: #2E2F42;
 }
 .page-links{
+    display: flex;
+    padding: 24px 0;
+    gap: 40px;
     list-style-type: none;
+    margin-right: 332px;
 }
 .page-links .link{
     color: #2E2F42;
@@ -54,22 +90,48 @@ body{
     font-style: normal;
 }
 .contacts-list{
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
     list-style-type: none;
 }
+
+
+
+  /*Hero*/
+
+
 .hero{
+    width: 1440px;
     background-color: #2E2F42;
+   
 }
+
+.hero-container{
+    padding-top: 188px;
+    margin-bottom: 48px;
+}
+
+
 .hero-title{
+    width: 496px;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    margin: 0 auto ;
+    
+    
+   
 }
 
 .page-button{
     color: #FFFFFF;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
     background-color: #4D5AE5;
     font-family: "Roboto" sans-serif;
     font-weight: 500;
@@ -77,12 +139,51 @@ body{
     line-height: 24px;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border: 0;
 }
 .page-button:hover,
 .page-button:focus{
     background-color: #404BBF;
 }
 
+.button-container{
+    padding: 0 635px 188px 636px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* Values */
+
+.values{
+    width: 1440px;
+}
+
+.values-container{
+    width: 1128px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.values-list-container{
+display: flex;
+gap: 24px;
+}
+
+.values-item-card{
+    width: 264px;
+}
 .title{
     color: #2E2F42;
         font-weight: 700;
@@ -99,21 +200,20 @@ body{
 color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 
 }
 .list-text{
     color: #434455;
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
 
 }
-.values-title{
-    color: transparent;
-}
+
 .values-list{
     list-style-type: none;
 }
