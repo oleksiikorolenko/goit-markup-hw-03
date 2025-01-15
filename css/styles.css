@@ -19,6 +19,10 @@ ul{
     padding: 0;
 }
 
+header{
+    border-bottom: 1px solid #E7E9FC;
+}
+
 
 .page{
     width: 1440px;
@@ -125,9 +129,6 @@ ul{
     text-align: center;
     letter-spacing: 0.02em;
     margin: 0 auto ;
-    
-    
-   
 }
 
 .page-button{
@@ -184,7 +185,7 @@ gap: 24px;
 }
 
 .values-item-card{
-    width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 .values-list-titles{
 color: #2E2F42;
@@ -233,12 +234,36 @@ color: #2E2F42;
 
 }
 
+.list-card-container{
+    width: calc((100% - 72) / 4);
+}
+
 .card-text-container{
 width: 232px;
 margin: 0 auto;
-padding: 32px 16px;
+padding: 32px 0;
 }
 
+.team-list-titles {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+
+}
+
+.team-list-text {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
 
 
 .title{
@@ -254,28 +279,56 @@ padding: 32px 16px;
     background-color: #FFFFFF;
 }
 
+.team {
+    background-color: #b42020;
+}
 
 
 /* Portfolio */
 
-.team-list-titles{
-    color: #2E2F42;
+.portfolio-title-container{
+    padding-top: 120px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.portfolio-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-card-container{
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-text{
+padding: 32px 0;
+padding-left: 16px;
+border-left: 1px;
+border-right: 1px;
+border-bottom: 1px;
+border-color: #E7E9FC;
+border-style: solid;
+
+}
+
+.portfolio-list-titles{
+color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    text-align: center;
+    }
 
-}
-.team-list-text{
+.portfolio-list-text{
     color: #434455;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        text-align: center;
-
+        
 }
 
 .values-list{
@@ -287,9 +340,7 @@ padding: 32px 16px;
 .works-list{
     list-style-type: none;
 }
-.team{
-    background-color: #FFFFFF;
-}
+
 .footer-page{
     background-color: #2E2F42;
 }
@@ -310,6 +361,10 @@ padding: 32px 16px;
 color: #F4F4FD;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.portfolio{
+    background-color: #4D5AE5;
 }
